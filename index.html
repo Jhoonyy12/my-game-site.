@@ -31,28 +31,13 @@ body{
     margin-bottom:50px;
 }
 
-.games{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.game{
-    text-align:center;
-}
-
 .tile{
     width:300px;
     height:300px;
+    margin:auto;
     border-radius:25px;
     overflow:hidden;
     box-shadow:0 8px 25px rgba(0,0,0,0.6);
-    transition:0.3s;
-}
-
-.tile:hover{
-    transform:scale(1.05);
 }
 
 .tile img{
@@ -80,27 +65,13 @@ a{
 <div class="title">TEAM SCORPIO</div>
 <div class="subtitle">GAME PORTAL</div>
 
-<div class="games">
-
-    <div class="game">
-        <a href="https://apexdrawn.com/" target="_blank">
-            <div class="tile">
-                <img src="teamscorpio.png" alt="ApexDrawn">
-            </div>
-        </a>
-        <div class="game-name">ApexDrawn</div>
+<a href="https://apexdrawn.com/" target="_blank">
+    <div class="tile">
+        <img src="teamscorpio.png" alt="ApexDrawn">
     </div>
+</a>
 
-    <div class="game">
-        <a href="https://subwaysurfers.gg/" target="_blank">
-            <div class="tile">
-                <img src="teamscorpio.png" alt="Subway Surfers">
-            </div>
-        </a>
-        <div class="game-name">Subway Surfers</div>
-    </div>
-
-</div>
+<div class="game-name">ApexDrawn</div>
 
 </body>
 </html>
