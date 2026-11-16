@@ -8,8 +8,8 @@ body{
     margin:0;
     background:#121027;
     font-family:Arial,sans-serif;
-    color:white;
     text-align:center;
+    color:white;
 }
 
 .title{
@@ -17,6 +17,7 @@ body{
     font-weight:900;
     letter-spacing:6px;
     margin-top:40px;
+    margin-bottom:0;
     text-transform:uppercase;
     text-shadow:
         0 0 10px #ff3355,
@@ -26,30 +27,42 @@ body{
 
 .subtitle{
     font-size:20px;
-    letter-spacing:8px;
+    letter-spacing:10px;
     color:#8ea2ff;
+    margin-top:10px;
     margin-bottom:50px;
 }
 
 .tile{
-    width:300px;
-    height:300px;
+    width:350px;
+    height:350px;
     margin:auto;
     border-radius:25px;
     overflow:hidden;
+    background:black;
     box-shadow:0 8px 25px rgba(0,0,0,0.6);
+    transition:0.3s;
 }
 
-.tile img{
+.tile:hover{
+    transform:scale(1.05);
+}
+
+.logo{
     width:100%;
     height:100%;
-    object-fit:cover;
-    display:block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:220px;
+    font-weight:900;
+    color:white;
+    font-family:Arial Black,sans-serif;
 }
 
 .game-name{
-    margin-top:15px;
-    font-size:28px;
+    margin-top:20px;
+    font-size:36px;
     font-weight:bold;
     color:white;
 }
@@ -67,7 +80,7 @@ a{
 
 <a href="https://apexdrawn.com/" target="_blank">
     <div class="tile">
-        <img src="teamscorpio.png" alt="ApexDrawn">
+        <div class="logo">A</div>
     </div>
 </a>
 
