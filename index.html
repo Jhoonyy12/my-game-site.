@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Jhoony's Gaming Website</title>
-</head>
 <body>
-    <h1>🎮 Jhoony's Gaming Website 🎮</h1>
-    <p>Welcome to my website!</p>
+<h1>Clicker Game</h1>
 
-    <button onclick="playGame()">Click Me!</button>
+<p>Score: <span id="score">0</span></p>
 
-    <p id="score">Score: 0</p>
+<button onclick="clickGame()">CLICK ME!</button>
 
-    <script>
-    let score = 0;
+<script>
+let score = 0;
 
-    function playGame() {
-        score++;
-        document.getElementById("score").textContent =
-            "Score: " + score;
-    }
-    </script>
-</body>
-</html>
+function clickGame() {
+    score++;
+    document.getElementById("score").textContent = score;
+}
+</script>
+
