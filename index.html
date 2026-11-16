@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Clicker Game</h1>
-
-<p>Score: <span id="score">0</span></p>
-
-<button onclick="clickGame()">CLICK ME!</button>
-
-<script>
-let score = 0;
-
-function clickGame() {
-    score++;
-    document.getElementById("score").textContent = score;
+<head>
+<title>Jhoony's Games</title>
+<style>
+body{
+    background:#a8fff7;
+    font-family:Arial,sans-serif;
+    text-align:center;
 }
-</script>
 
+.game{
+    width:300px;
+    margin:auto;
+}
+
+.game img{
+    width:300px;
+    border-radius:20px;
+}
+</style>
+</head>
+<body>
